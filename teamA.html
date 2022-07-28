@@ -1,0 +1,563 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<style>
+body {
+
+  margin: 0;
+  font-family: Georgia, serif;
+  text-align: left;
+  background-color: #f9d5e5;       
+  }
+        
+  
+  /Side Vertical Menu/
+  .vertical-menu {
+  width: 200px;
+    }
+
+  .vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+    }
+
+  .vertical-menu a:hover {
+  background-color: #c6d7eb;
+    }
+
+  .vertical-menu a.active {
+  background-color:#008B8B;
+  color: white;
+    }
+  .vertical-menu {
+  float: left;         
+  width: 300px;        
+    }
+
+
+	
+
+.myDiv {
+width: 1000px;
+line-height: 1.4;
+margin: 0 auto;
+margin-right: 150px;    
+text-align: left;
+font-family:times new roman;
+font-size: 20px; 
+}
+*:before, 
+*:after {
+  box-sizing:content-box; 
+}
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	
+}
+
+
+
+.container {
+	max-width:800px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+        
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:30px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #f07c9b;
+	display: block;
+	font-size: 40px;
+	font-weight: 400;
+        text-align:center;
+}
+
+#contact h4 {
+	margin:5px 0 18px;
+	display:block;
+	font-size:16px;
+        text-align:center;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+  width: 100%;
+  font-size:15px;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#008B8B;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:25px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#008B8B;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+.main {
+ max-height: 550px;;
+ background-color: red;
+ color: white;
+ font-size: 38000pt;
+ text-align: left;
+ line-height: 550px;
+}
+.row=.column {
+    padding: 0px ;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.row .column img{
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+    margin: 10px;
+}
+/Footer/
+footer{
+ position:relative;
+ bottom: 0;
+}
+.footer-distributed{
+ background-color:#008B8B ;
+ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ box-sizing: border-box;
+ width: 100%;
+ text-align: left;
+ font: bold 16px sans-serif;
+ 
+ padding: 15px 50px;
+ margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+ display: inline-block;
+ vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+ width: 40%;
+}
+ 
+.footer-distributed h3{
+ color:  #ffffff;
+ font: normal 40px 'serif',Garamond;
+ margin: 0;
+}
+ 
+.footer-distributed h3 span{
+ color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+ color:  #ffffff;
+ margin: 20px 0 12px;
+ padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+ display:inline-block;
+ line-height: 1.6;
+ text-decoration: none;
+ color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+ color:  #8f9296;
+ font-size: 14px;
+ font-weight: normal;
+ margin: 0;
+}
+
+.footer-distributed .footer-center{
+ width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+ background-color:  #33383b;
+ color: #ffffff;
+ font-size: 30px;
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 42px;
+ margin: 10px 15px;
+ vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+ font-size: 20px;
+ line-height: 35px;
+}
+ 
+.footer-distributed .footer-center p{
+ display: inline-block;
+ color: #ffffff;
+ vertical-align: middle;
+ margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+ display:block;
+ font-weight: normal;
+ font-size:20px;
+ line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+ color:  #5383d3;
+ text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+ width: 15%;
+}
+ 
+.footer-distributed .footer-company-about{
+ line-height: 20px;
+ color:  #000000;
+ font-size: 18px;
+ font-weight: normal;
+ margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+ display: block;
+ color:  #ffffff;
+ font-size: 20px;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+ margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+ display: inline-block;
+ width: 35px;
+ height: 35px;
+ cursor: pointer;
+ background-color:  #33383b;
+ border-radius: 2px;
+ 
+ font-size: 20px;
+ color: #ffffff;
+ text-align: center;
+ line-height: 35px;
+ 
+ margin-right: 3px;
+ margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+ .footer-distributed{
+ font: bold 14px sans-serif;
+ 
+ }
+ 
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right{
+ display: block;
+ width: 100%;
+ margin-bottom: 25px;
+ text-align: center;
+ }
+ 
+ .footer-distributed .footer-center i{
+ margin-left: 0;
+ }
+ .main {
+ line-height: normal;
+ font-size: 600px;
+ }
+ 
+}
+
+</style>
+<title>Team A</title>
+</head>
+    <body>
+        <img src=http://www.360rf.in/themes/custom/research_rf/images/360RFBannercopy.jpg style="width:1525px;height:130px;" >
+
+
+<div style="padding-left: 80px;"></div>
+          
+        <div class="vertical-menu">
+            <a href="#" class="active">ABOUT</a>
+            
+            <a href="#">About Us</a>
+            <a href="#">Mission & Vision</a>
+            <a href="#">Why to Choose 360?</a>
+            <a href="#">About Founder</a>
+            <a href="#" class="active">BODY</a>
+            <a href="#">General</a>
+            <a href="#">Governing</a>
+            <a href="#" class="active">DEPARTMENTS</a>
+            <a href="#">Agriculture</a>
+            <a href="#">Data Management & Analysis</a>
+            <a href="#">Department of Rural Development</a>
+            <a href="#">Development Goals</a>
+            <a href="#">Energy</a>
+            <a href="#">Environment &   Natuaral Resources</a>
+            <a href="#">Financial Resources</a>
+            <a href="#">Health</a>
+            <a href="#">Human Resources Development</a>
+            <a href="#">Industries</a>
+            <a href="#">Project Management & Appraisal</a>
+            <a href="#">Public-Private Partnerships</a>
+            <a href="#">Science & Technology</a>
+            <a href="#">Skill Development & Employment</a>
+            <a href="#">Social Justice & Empowerment</a>
+            <a href="#">Urban Development</a>
+            <a href="#">Voluntary Action Cell</a>
+            <a href="#">Water & Land Resources</a>
+            <a href="#" class="active">INSTITUTIONS</a>
+            <a href="#">First Aid</a>
+            <a href="#">Team A</a>
+            <a href="#">360 Research and Innovation Group</a>
+            <a href="#">THE KRAFT LADY</a>
+            <a href="#">The Life Savers</a>
+            <a href="#">Master English Classes</a>
+            <a href="#">Gurukul Coaching Center</a>
+             <a href="#" class="active">MEMBERSHIP</a>
+            
+             <a href="#">Join Us</a>
+             <a href="#" class="active">CONTACT US</a>
+</div>
+<br>
+<div>
+	<h1 style="text-align:center">Team A</h1><br>
+	<center><img src="http://360rf.in/sites/default/files/2021-01/Logo%20Team%20A.jpg" style="width: 100px; height:100px" ></center>
+</div>
+<br>
+
+<div class="myDiv">
+<p>Team A, is a constituent unit of 360 Research Foundation working for women security and empowerment. 
+          It is a group of Local Police, Social workers and Volunteers managed by assistance of senior police officers. 
+          The Team visits every school, coaching, market and every sensitive place to protect and aware girls and women from the social evils.</p>
+</div>
+<br>
+<div>
+<center><img src="https://sites.google.com/site/360researchfoundation/_/rsrc/1575905268872/home/IMG20191207110405.jpg" style="width: 500px; margin-right:100px;"></center> 
+</div>
+<br>
+<div>
+<center><h1 style="margin-right:120px; font-size:40px; color:#008B8B">Articles of 360 research foundation</h1>
+<br>
+<br>
+<center><h2 style="margin-right:220px; font-size:30px;">Article 1: Team A for Security</h2></center>
+<p style="font-size:20px; margin-right:220px;">Team A is made for the security of college and school going students.</p>
+<br>
+<center><img src="http://www.360rf.in/sites/default/files/inline-images/IMG_20190725_124718.jpg" style="width: 500px; margin-right:100px; height:450px;"></center> 
+</div>
+<br>
+<br>
+
+<div>
+<center><h2 style="margin-right:220px; font-size:30px;">Article 2: Team A for girl education</h2></center>
+<p style="font-size:20px; margin-left:650px;">Steps taken to save girl education.</p>
+<br>
+<center><img src="http://www.360rf.in/sites/default/files/inline-images/IMG_20190725_122406.jpg" style="width: 500px; margin-right:100px; height:450px;"></center> 
+</div>
+<br>
+
+<div class="myDiv">
+<h1>About Us</h1>
+<p>The 360 Research Foundation (360RF) is a National level initiative to promote and facilitate the grassroots researches and technological innovations with collaborative and interdisciplinary research and enhancement of research networking capacity and infrastructure. Its mission is to help researchers, innovators and creative minds in the field if empowerment and livelihood. 360 RF scouts, supports, educates, provides training in research and related skills and spawns’ researches and innovations developed by individuals, local team and communities in any field, helping in human survival and scientific research. 360 has proved that grassroots innovators can match anyone in the world when it comes to solving problems creatively. They perform better than others in generating greater sustainable alternatives by using local resources frugally. Those who see poor only as the consumers of cheap goods, miss the richness of knowledge at grassroots level and their potential as provider of ideas and innovations.</p>
+</div>
+<br>
+
+<div>
+<center><img src="http://www.360rf.in/sites/default/files/inline-images/About%20Page%20Banner.jpg" style="width: 500px; margin-right:20px;"></center> 
+</div>
+
+<div class="container">  
+              <form id="contact" action="" method="post">
+                <h3>Send a Direct Message</h3>
+                <h4>Contact us today, and get reply with in 24 hours!</h4>
+                <fieldset>
+                  <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Subject" type="text" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                  <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+              </form>
+             
+              
+            </div>
+            <footer class="footer-distributed">
+ 
+              <div class="footer-left">
+              <h3 style="font-size:25px"> Gallery</h3>
+              <div class="row">
+            <div class="column">
+                <img src="http://360rf.in/sites/default/files/2021-01/OK%20PNG%20FINAL%20A%20copy.png">
+            </div>
+            <div class="column">
+                <img src="http://360rf.in/sites/default/files/2021-01/Logo%20Team%20A.jpg">
+            </div>
+            <div class="column">
+                <img src="http://360rf.in/sites/default/files/2021-01/FINAL%20BLOOD%20DONATION%20LOGO%20copy.png">
+            </div>
+            <div class="column">
+                <img src="http://360rf.in/sites/default/files/2021-01/MASTER%20ENGLISH%20CLASSES%20LOGO%20copy.png">
+            </div>
+            <div class="column">
+                <img src="http://360rf.in/sites/default/files/2021-01/360%20Research%20and%20Innovation%20Group%20LOGO%20-%20Copy.png">
+            </div>
+            <div class="column">
+                <img src="http://360rf.in/sites/default/files/2021-01/GURUKUL%20COACHING%20CENTER%20LOGO%20copy.png">
+            </div>
+            
+        </div>
+              
+              
+              </div>
+              
+              <div class="footer-center">
+              <h3>Contacts</h3>
+<left>
+<img src="http://www.360rf.in/sites/default/files/360rf.png" width=100px height=100px></left>
+              <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Tumakadiya</span> West Champaran, Bihar</p>
+              </div>
+              
+              <div>
+              <i class="fa fa-phone"></i>
+              <p>+91 9471040714</p>
+              </div>
+              
+              <div>
+              <i class="fa fa-envelope"></i>
+              <p ><a href="mailto:contact@360rf.in"  style="color:rgb(247, 247, 252); text-decoration:underline">contact@360rf.in</a></p>
+              </div>
+              
+              </div>
+              
+              <div class="footer-right">
+              
+              
+              <p class="footer-company-about">
+              <span>About the company</span>
+              The 360 Research Foundation (360RF) is a National level initiative to promote and facilitate the grassroots researches and technological innovations .
+              </p>
+              
+              <div class="footer-icons">
+              
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-github"></i></a>
+              
+              </div>
+              
+              </div>
+              
+              </footer>
+</body>
+</html>
